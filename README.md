@@ -1,4 +1,3 @@
-```markdown
 # CropValueForecast-MLP
 
 This repository contains a machine learning project aimed at forecasting the export value of crop products using a Multilayer Perceptron (MLP) model. The model uses historical agricultural data to predict crop export values three years into the future.
@@ -7,23 +6,30 @@ This repository contains a machine learning project aimed at forecasting the exp
 
 The goal of this project is to forecast the export value of crop products using a variety of food and agricultural indicators sourced from the FAOSTAT database. The model is built using Python and TensorFlow/Keras, and leverages a feedforward neural network for regression.
 
+## Project Structure
+
+This project contains the following files and directories:
+
+- `Final_Code.ipynb`: Jupyter Notebook containing the MLP model code and analysis.
+- `Data/`: Folder containing the 13 CSV files from FAOSTAT, used for training and testing the model.
+- `model_predictions.xlsx`: The model’s predictions on the test set, stored in an Excel file.
+
 ## Dataset
 
-The dataset used in this project is derived from the FAOSTAT database and includes the following categories:
-
-- Consumer prices indicators
-- Crops production indicators
-- Emissions
-- Employment
-- Exchange rate
-- Fertilizers use
-- Food balances indicators
-- Food security indicators
-- Food trade indicators
-- Foreign direct investment
-- Land temperature change
-- Land use
-- Pesticides use
+The dataset used in this project is made up of data extracted from the [FAOSTAT database](https://www.fao.org/faostat/en/#home), which provides open access to food and agricultural data for over 245 countries and covers years from the mid-1990s to the present day. It includes the following categories:
+1. [Consumer prices indicators](https://www.fao.org/faostat/en/#data/CP)
+2. [Crops production indicators](https://www.fao.org/faostat/en/#data/QCL)
+3. [Emissions](https://www.fao.org/faostat/en/#data/GCE) & [Greenhouse Gas Emissions](https://www.fao.org/faostat/en/#data/GV)
+4. [Employment](https://www.fao.org/faostat/en/#data/OEA)
+5. [Exchange rate](https://www.fao.org/faostat/en/#data/PE)
+6. [Fertilizers use](https://www.fao.org/faostat/en/#data/RFB)
+7. [Food balances indicators](https://www.fao.org/faostat/en/#data/FBS)
+8. [Food security indicators](https://www.fao.org/faostat/en/#data/FS)
+9. [Food trade indicators](https://www.fao.org/faostat/en/#data/TCL)
+10. [Foreign direct investment](https://www.fao.org/faostat/en/#data/FDI)
+11. [Land temperature change](https://www.fao.org/faostat/en/#data/ET)
+12. [Land use](https://www.fao.org/faostat/en/#data/RL)
+13. [Pesticides use](https://www.fao.org/faostat/en/#data/RP)
 
 The data covers over 245 countries and spans from the mid-1990s to the present day. It includes variables relevant to food and agriculture, such as crop yields, prices, emissions, and more.
 
@@ -56,7 +62,7 @@ The model's performance was evaluated using metrics such as Root Mean Squared Er
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/CropValueForecast-MLP.git
+   git clone https://github.com/Odanson/CropValueForecast-MLP.git
    ```
 2. Install the necessary dependencies:
    ```bash
@@ -64,7 +70,7 @@ The model's performance was evaluated using metrics such as Root Mean Squared Er
    ```
 3. Open the Jupyter Notebook and run the model:
    ```bash
-   jupyter notebook Final_Code_Candid_No_276221.ipynb
+   jupyter notebook Final_Code.ipynb
    ```
 4. The model predictions and performance metrics will be displayed in the output cells.
 
@@ -82,7 +88,6 @@ You can install all dependencies using:
 ```bash
 pip install -r requirements.txt
 ```
-
 ## Results
 
 The results of the model, including the predictions and performance metrics, can be found in the notebook outputs. The `predictions.csv` file includes the actual vs predicted export values.
@@ -90,4 +95,4 @@ The results of the model, including the predictions and performance metrics, can
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
+
